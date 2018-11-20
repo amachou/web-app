@@ -1,0 +1,11 @@
+version: '2'
+services:
+    amachou-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/amachou/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=amachou
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

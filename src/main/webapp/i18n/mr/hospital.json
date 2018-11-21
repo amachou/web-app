@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "नवीन Hospital तयार करा",
+                "createOrEditLabel": "Hospital तयार किंवा संपादित करा",
+                "search": "Hospital शोधा"
+            },
+            "created": "Hospital [identifier: {{ param }}] तयार आहे",
+            "updated": "Hospital [identifier: {{ param }}] सुधारित केले आहे",
+            "deleted": "Hospital [identifier: {{ param }}] हटविले आहे",
+            "delete": {
+                "question": "Hospital [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

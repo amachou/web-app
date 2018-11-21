@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Thêm mới một Disease",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Disease",
+                "search": "Tìm Disease"
+            },
+            "created": "Một Disease mới được tạo với định danh {{ param }}",
+            "updated": "Một Disease cập nhật với định danh {{ param }}",
+            "deleted": "Một Disease đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Buat Disease baru",
+                "createOrEditLabel": "Buat atau edit Disease",
+                "search": "Cari Disease"
+            },
+            "created": "Disease dengan id {{ param }} telah dibuat",
+            "updated": "Disease dengan id {{ param }} telah diperbaharui",
+            "deleted": "Disease dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

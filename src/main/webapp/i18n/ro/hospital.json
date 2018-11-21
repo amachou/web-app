@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Creeare o nouă entitate Hospital",
+                "createOrEditLabel": "Creeare sau editare Hospital",
+                "search": "Căutare după Hospital"
+            },
+            "created": "A fost creată o nouă entitate Hospital cu identificatorul {{ param }}",
+            "updated": "Hospital cu identificatorul {{ param }} a fost actualizată",
+            "deleted": "Hospital cu identificatorul {{ param }} a fost ștearsă",
+            "delete": {
+                "question": "Sunteți sigur că doriți să ștergeți Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

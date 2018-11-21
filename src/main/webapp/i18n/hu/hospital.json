@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Egy új Hospital létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Hospitalt",
+                "search": "Hospital keresése"
+            },
+            "created": "Egy új Hospital lett létrehozva {{ param }} azonosítóval",
+            "updated": "A Hospital módosítva lett {{ param }} azonosítóval",
+            "deleted": "A Hospital törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Hospitalt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

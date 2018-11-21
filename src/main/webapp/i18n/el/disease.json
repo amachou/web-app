@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Δημιουργήστε ένα νέο Disease",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Disease",
+                "search": "Αναζήτηση για Disease"
+            },
+            "created": "Ένα νέο Disease έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα Disease έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα Disease έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Disease {{ id }};"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

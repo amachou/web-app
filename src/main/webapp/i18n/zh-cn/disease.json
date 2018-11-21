@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "创建新 Disease",
+                "createOrEditLabel": "创建或编辑 Disease",
+                "search": "查找 Disease"
+            },
+            "created": "Disease {{ param }} 创建成功",
+            "updated": "Disease {{ param }} 更新成功",
+            "deleted": "Disease {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Disease {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

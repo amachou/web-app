@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "नया Disease बनाएँ",
+                "createOrEditLabel": "Disease बनाएँ या संपादित करें",
+                "search": "Disease खोजें"
+            },
+            "created": "एक नया Disease [identifier: {{ param }}] तैयार है",
+            "updated": "एक Disease [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Disease [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Disease [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

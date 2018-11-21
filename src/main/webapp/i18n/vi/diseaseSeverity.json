@@ -1,0 +1,12 @@
+{
+    "amachouApp": {
+        "DiseaseSeverity": {
+            "null": "",
+            "LOW": "LOW",
+            "MEDIUM": "MEDIUM",
+            "HIGH": "HIGH",
+            "SEVERE": "SEVERE",
+            "DEADLY": "DEADLY"
+        }
+    }
+}

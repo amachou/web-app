@@ -45,9 +45,9 @@ spring:
                     destination: topic-jhipster
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:postgresql://localhost:5432/admin-amachou
-        username: amachou
-        password: jamalahi
+        url: jdbc:postgresql://localhost:5432/amachou
+        username: postgres
+        password: +AnQ@tfqW_RdGE8j
         hikari:
             auto-commit: false
     jpa:

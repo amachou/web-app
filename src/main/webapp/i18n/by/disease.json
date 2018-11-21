@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Стварыць новы Disease",
+                "createOrEditLabel": "Стварыць або адрэдагаваць Disease",
+                "search": "Знайсці Disease"
+            },
+            "created": "Новы Disease створан з ідэнтыфікатарам {{ param }}",
+            "updated": "Disease абноўлен з ідэнтыфікатарам {{ param }}",
+            "deleted": "Disease выдален з ідэнтыфікатарам {{ param }}",
+            "delete": {
+                "question": "Вы ўпэўнены, што жадаеце выдаліць Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

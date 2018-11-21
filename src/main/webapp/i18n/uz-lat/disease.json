@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Yangi Disease qo`shish",
+                "createOrEditLabel": "Diseaseni tahrirlash",
+                "search": "Diseaseni izlash"
+            },
+            "created": "Disease {{ param }} bilan qo`shildi",
+            "updated": "{{ param }}- Disease saqlandi",
+            "deleted": "{{ param }}- Disease o`chirildi",
+            "delete": {
+                "question": "{{ id }}- Diseaseni o`chirmoqchimisiz? "
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

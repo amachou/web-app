@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Skapa en ny Disease",
+                "createOrEditLabel": "Skapa eller ändra en Disease",
+                "search": "Sök efter Disease"
+            },
+            "created": "En ny Disease är skapad med id {{ param }}",
+            "updated": "En Disease är uppdaterad med id  {{ param }}",
+            "deleted": "En Disease är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

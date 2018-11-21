@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Krijo një të ri Hospital",
+                "createOrEditLabel": "Krijo ose përpuno një Hospital",
+                "search": "Kërko për Hospital"
+            },
+            "created": "Një Hospital i ri u krijua me identifikues {{ param }}",
+            "updated": "Një Hospital u përpunua me identifikues {{ param }}",
+            "deleted": "Një Hospital u fshi me identifikues {{ param }}",
+            "delete": {
+                "question": "Jeni i sigurtë që doni të fshini Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

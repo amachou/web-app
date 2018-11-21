@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospital",
+                "createLabel": "Dodaj Hospital",
+                "createOrEditLabel": "Dodaj lub edytuj: Hospital",
+                "search": "Szukaj Hospital"
+            },
+            "created": "Utworzono nowy obiekt typu Hospital z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono obiekt typu Hospital z identyfikatorem {{ param }}",
+            "deleted": "Usunięto obiekt typu Hospital z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

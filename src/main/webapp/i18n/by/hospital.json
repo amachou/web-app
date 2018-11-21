@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Стварыць новы Hospital",
+                "createOrEditLabel": "Стварыць або адрэдагаваць Hospital",
+                "search": "Знайсці Hospital"
+            },
+            "created": "Новы Hospital створан з ідэнтыфікатарам {{ param }}",
+            "updated": "Hospital абноўлен з ідэнтыфікатарам {{ param }}",
+            "deleted": "Hospital выдален з ідэнтыфікатарам {{ param }}",
+            "delete": {
+                "question": "Вы ўпэўнены, што жадаеце выдаліць Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

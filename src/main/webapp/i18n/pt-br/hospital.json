@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Criar novo Hospital",
+                "createOrEditLabel": "Criar ou editar Hospital",
+                "search": "Pesquisar por Hospital"
+            },
+            "created": "Um novo Hospital foi criado com o identificador {{ param }}",
+            "updated": "Um Hospital foi atualizado com o identificador {{ param }}",
+            "deleted": "Um Hospital foi deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

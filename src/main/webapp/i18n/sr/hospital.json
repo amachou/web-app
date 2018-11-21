@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Kreiraj novi Hospital",
+                "createOrEditLabel": "Kreirajte ili izmenite Hospital",
+                "search": "Potražite Hospital"
+            },
+            "created": "Kreiran je novi Hospital pod nazivom {{ param }}",
+            "updated": "Hospital pod nazivom {{ param }} je ažuriran",
+            "deleted": "Hospital pod nazivom {{ param }} je obrisan",
+            "delete": {
+                "question": "Da li ste sigurni da želite da obrišete Hospital pod nazivom {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Ստեղծել նոր Hospital",
+                "createOrEditLabel": "Ստեղծել կամ փոփոխել Hospital",
+                "search": "Գտնել Hospital"
+            },
+            "created": "Նոր Hospital ստեղծված է {{ param }} նունացուցիչով",
+            "updated": "Hospital թարմացվաց է {{ param }} նունացուցիչով",
+            "deleted": "Hospital հեռացված է {{ param }}  նունացուցիչով",
+            "delete": {
+                "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

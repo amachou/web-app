@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Yangi Hospital qo`shish",
+                "createOrEditLabel": "Hospitalni tahrirlash",
+                "search": "Hospitalni izlash"
+            },
+            "created": "Hospital {{ param }} bilan qo`shildi",
+            "updated": "{{ param }}- Hospital saqlandi",
+            "deleted": "{{ param }}- Hospital o`chirildi",
+            "delete": {
+                "question": "{{ id }}- Hospitalni o`chirmoqchimisiz? "
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

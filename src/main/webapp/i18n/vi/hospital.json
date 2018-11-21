@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Thêm mới một Hospital",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Hospital",
+                "search": "Tìm Hospital"
+            },
+            "created": "Một Hospital mới được tạo với định danh {{ param }}",
+            "updated": "Một Hospital cập nhật với định danh {{ param }}",
+            "deleted": "Một Hospital đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

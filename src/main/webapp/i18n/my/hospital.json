@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Hospital အသစ်ထည့်မည်",
+                "createOrEditLabel": "Hospital အသစ်ထည့်ခြင်း (သို့) ပြုပြင်ခြင်း",
+                "search": "ရှာဖွေရန် Hospital"
+            },
+            "created": "{{ param }} အိုင်ဒီဖြင့် Hospital အသစ်တစ်ခုအား ထည့်ပြီးပါပြီ။",
+            "updated": "{{ param }} အိုင်ဒီဖြင့် Hospital တစ်ခုအား ပြုပြင်ပြီးပါပြီ။",
+            "deleted": "{{ param }} အိုင်ဒီဖြင့် Hospital တစ်ခုအား ဖျက်ပြီးပါပြီ။",
+            "delete": {
+                "question": "Hospital {{ id }} အား ဖျက်ပါမည်။ သေချာပါသလား?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

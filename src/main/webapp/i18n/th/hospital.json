@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "สร้าง Hospital",
+                "createOrEditLabel": "สร้างหรือแก้ไข Hospital",
+                "search": "ค้นหา Hospital"
+            },
+            "created": "Hospital ถูกสร้างด้วย {{ param }}",
+            "updated": "Hospital ถูกแก้ไขด้วย {{ param }}",
+            "deleted": "Hospital ถูกลบด้วย {{ param }}",
+            "delete": {
+                "question": "คุณต้องการที่จะลบ Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

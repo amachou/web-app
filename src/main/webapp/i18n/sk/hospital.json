@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Pridať Hospital",
+                "createOrEditLabel": "Pridať alebo upraviť Hospital",
+                "search": "Vyhľadať Hospital"
+            },
+            "created": "Bol vytvorený potomok entity Hospital s identifikátorom {{ param }}",
+            "updated": "Potomok entity Hospital s identifikátorom {{ param }} bol upravený.",
+            "deleted": "Potomok entity Hospital s identifikátorom {{ param }} bol vymazaný.",
+            "delete": {
+                "question": "Ste si istý, že chcete vymazať Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Pridať Disease",
+                "createOrEditLabel": "Pridať alebo upraviť Disease",
+                "search": "Vyhľadať Disease"
+            },
+            "created": "Bol vytvorený potomok entity Disease s identifikátorom {{ param }}",
+            "updated": "Potomok entity Disease s identifikátorom {{ param }} bol upravený.",
+            "deleted": "Potomok entity Disease s identifikátorom {{ param }} bol vymazaný.",
+            "delete": {
+                "question": "Ste si istý, že chcete vymazať Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

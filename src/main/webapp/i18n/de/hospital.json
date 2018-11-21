@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Hospital erstellen",
+                "createOrEditLabel": "Hospital erstellen oder bearbeiten",
+                "search": "Suche nach Hospital"
+            },
+            "created": "Hospital erstellt mit ID {{ param }}",
+            "updated": "Hospital aktualisiert mit ID {{ param }}",
+            "deleted": "Hospital gelöscht mit ID {{ param }}",
+            "delete": {
+                "question": "Soll Hospital {{ id }} wirklich dauerhaft gelöscht werden?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

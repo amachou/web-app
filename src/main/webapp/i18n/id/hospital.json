@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Buat Hospital baru",
+                "createOrEditLabel": "Buat atau edit Hospital",
+                "search": "Cari Hospital"
+            },
+            "created": "Hospital dengan id {{ param }} telah dibuat",
+            "updated": "Hospital dengan id {{ param }} telah diperbaharui",
+            "deleted": "Hospital dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

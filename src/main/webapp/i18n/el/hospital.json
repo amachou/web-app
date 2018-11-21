@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Δημιουργήστε ένα νέο Hospital",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Hospital",
+                "search": "Αναζήτηση για Hospital"
+            },
+            "created": "Ένα νέο Hospital έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα Hospital έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα Hospital έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Hospital {{ id }};"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Skapa en ny Hospital",
+                "createOrEditLabel": "Skapa eller ändra en Hospital",
+                "search": "Sök efter Hospital"
+            },
+            "created": "En ny Hospital är skapad med id {{ param }}",
+            "updated": "En Hospital är uppdaterad med id  {{ param }}",
+            "deleted": "En Hospital är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

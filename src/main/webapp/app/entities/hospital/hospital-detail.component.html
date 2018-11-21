@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="hospital">
+            <h2><span jhiTranslate="amachouApp.hospital.detail.title">Hospital</span> {{hospital.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="amachouApp.hospital.name">Name</span></dt>
+                <dd>
+                    <span>{{hospital.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="amachouApp.hospital.lat">Lat</span></dt>
+                <dd>
+                    <span>{{hospital.lat}}</span>
+                </dd>
+                <dt><span jhiTranslate="amachouApp.hospital.lon">Lon</span></dt>
+                <dd>
+                    <span>{{hospital.lon}}</span>
+                </dd>
+                <dt><span jhiTranslate="amachouApp.hospital.size">Size</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'amachouApp.HospitalSize.' + hospital.size}}">{{hospital.size}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/hospital', hospital.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

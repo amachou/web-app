@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "สร้าง Disease",
+                "createOrEditLabel": "สร้างหรือแก้ไข Disease",
+                "search": "ค้นหา Disease"
+            },
+            "created": "Disease ถูกสร้างด้วย {{ param }}",
+            "updated": "Disease ถูกแก้ไขด้วย {{ param }}",
+            "deleted": "Disease ถูกลบด้วย {{ param }}",
+            "delete": {
+                "question": "คุณต้องการที่จะลบ Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

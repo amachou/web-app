@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Kreiraj novi Disease",
+                "createOrEditLabel": "Kreirajte ili izmenite Disease",
+                "search": "Potražite Disease"
+            },
+            "created": "Kreiran je novi Disease pod nazivom {{ param }}",
+            "updated": "Disease pod nazivom {{ param }} je ažuriran",
+            "deleted": "Disease pod nazivom {{ param }} je obrisan",
+            "delete": {
+                "question": "Da li ste sigurni da želite da obrišete Disease pod nazivom {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

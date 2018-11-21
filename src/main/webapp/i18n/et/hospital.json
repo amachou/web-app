@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Lisa uus Hospital",
+                "createOrEditLabel": "Lisa või muuda Hospital",
+                "search": "Otsi Hospital"
+            },
+            "created": "Uus Hospital on loodud identifikaatoriga {{ param }}",
+            "updated": "Hospital identifikaatoriga {{ param }} on muudetud",
+            "deleted": "Hospital identifikaatoriga {{ param }} on kustutatud",
+            "delete": {
+                "question": "Kas olete kindel, et soovite kustutada Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

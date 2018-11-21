@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Creeare o nouă entitate Disease",
+                "createOrEditLabel": "Creeare sau editare Disease",
+                "search": "Căutare după Disease"
+            },
+            "created": "A fost creată o nouă entitate Disease cu identificatorul {{ param }}",
+            "updated": "Disease cu identificatorul {{ param }} a fost actualizată",
+            "deleted": "Disease cu identificatorul {{ param }} a fost ștearsă",
+            "delete": {
+                "question": "Sunteți sigur că doriți să ștergeți Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

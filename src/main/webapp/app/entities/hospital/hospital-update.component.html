@@ -1,0 +1,79 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-hospital-heading" jhiTranslate="amachouApp.hospital.home.createOrEditLabel">Create or edit a Hospital</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!hospital.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="hospital.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="amachouApp.hospital.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="hospital.name" required/>
+                    <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="amachouApp.hospital.lat" for="field_lat">Lat</label>
+                    <input type="number" class="form-control" name="lat" id="field_lat"
+                        [(ngModel)]="hospital.lat" required/>
+                    <div [hidden]="!(editForm.controls.lat?.dirty && editForm.controls.lat?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.lat?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.lat?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="amachouApp.hospital.lon" for="field_lon">Lon</label>
+                    <input type="number" class="form-control" name="lon" id="field_lon"
+                        [(ngModel)]="hospital.lon" required/>
+                    <div [hidden]="!(editForm.controls.lon?.dirty && editForm.controls.lon?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.lon?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.lon?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="amachouApp.hospital.size" for="field_size">Size</label>
+                    <select class="form-control" name="size" [(ngModel)]="hospital.size" id="field_size"  required>
+                        <option value="SMALL">{{'amachouApp.HospitalSize.SMALL' | translate}}</option>
+                        <option value="MEDIUM">{{'amachouApp.HospitalSize.MEDIUM' | translate}}</option>
+                        <option value="BIG">{{'amachouApp.HospitalSize.BIG' | translate}}</option>
+                    </select>
+                    <div [hidden]="!(editForm.controls.size?.dirty && editForm.controls.size?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.size?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

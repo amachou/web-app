@@ -1,0 +1,10 @@
+{
+    "amachouApp": {
+        "HospitalType": {
+            "null": "",
+            "SMALL": "SMALL",
+            "MEDIUM": "MEDIUM",
+            "BIG": "BIG"
+        }
+    }
+}

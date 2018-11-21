@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Lisa uus Disease",
+                "createOrEditLabel": "Lisa või muuda Disease",
+                "search": "Otsi Disease"
+            },
+            "created": "Uus Disease on loodud identifikaatoriga {{ param }}",
+            "updated": "Disease identifikaatoriga {{ param }} on muudetud",
+            "deleted": "Disease identifikaatoriga {{ param }} on kustutatud",
+            "delete": {
+                "question": "Kas olete kindel, et soovite kustutada Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

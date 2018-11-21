@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "建立一筆新的 Disease",
+                "createOrEditLabel": "建立或編輯 Disease",
+                "search": "搜尋 Disease"
+            },
+            "created": "新的 Disease 建立成功，識別碼為 {{ param }}",
+            "updated": "識別碼為 {{ param }} 的 Disease 更新成功",
+            "deleted": "識別碼為 {{ param }} 的 Disease 刪除成功",
+            "delete": {
+                "question": "您確定要刪除 Disease {{ id }} 嗎?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

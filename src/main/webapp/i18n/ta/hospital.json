@@ -1,0 +1,25 @@
+{
+    "amachouApp": {
+        "hospital": {
+            "home": {
+                "title": "Hospitals",
+                "createLabel": "Hospital-ஐ உருவாக்கு",
+                "createOrEditLabel": "Hospital -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Hospital"
+            },
+            "created": "Hospital புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Hospital மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Hospital நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Hospital {{ id }}?"
+            },
+            "detail": {
+                "title": "Hospital"
+            },
+            "name": "Name",
+            "lat": "Lat",
+            "lon": "Lon",
+            "size": "Size"
+        }
+    }
+}

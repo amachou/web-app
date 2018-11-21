@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Krijo një të ri Disease",
+                "createOrEditLabel": "Krijo ose përpuno një Disease",
+                "search": "Kërko për Disease"
+            },
+            "created": "Një Disease i ri u krijua me identifikues {{ param }}",
+            "updated": "Një Disease u përpunua me identifikues {{ param }}",
+            "deleted": "Një Disease u fshi me identifikues {{ param }}",
+            "delete": {
+                "question": "Jeni i sigurtë që doni të fshini Disease {{ id }}?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

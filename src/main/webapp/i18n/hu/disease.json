@@ -1,0 +1,26 @@
+{
+    "amachouApp": {
+        "disease": {
+            "home": {
+                "title": "Diseases",
+                "createLabel": "Egy új Disease létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Diseaset",
+                "search": "Disease keresése"
+            },
+            "created": "Egy új Disease lett létrehozva {{ param }} azonosítóval",
+            "updated": "A Disease módosítva lett {{ param }} azonosítóval",
+            "deleted": "A Disease törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Diseaset {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Disease"
+            },
+            "name": "Name",
+            "description": "Description",
+            "severity": "Severity",
+            "symptoms": "Symptoms",
+            "tips": "Tips"
+        }
+    }
+}

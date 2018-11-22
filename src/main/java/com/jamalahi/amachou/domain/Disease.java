@@ -32,20 +32,22 @@ public class Disease implements Serializable {
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
-    @Column(name = "description")
-    private String description;
-
     @NotNull
     @Enumerated(EnumType.STRING)
     @Column(name = "severity", nullable = false)
     private DiseaseSeverity severity;
 
-    @NotNull
-    @Column(name = "symptoms", nullable = false)
-    private String symptoms;
+    @Size(max = 1000000000)
+    @Column(name = "description", length = 1000000000)
+    private String description;
 
     @NotNull
-    @Column(name = "tips", nullable = false)
+    @Size(max = 1000000000)
+    @Column(name = "symptoms", length = 1000000000, nullable = false)
+    private String symptoms;
+
+    @Size(max = 1000000000)
+    @Column(name = "tips", length = 1000000000)
     private String tips;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
@@ -70,19 +72,6 @@ public class Disease implements Serializable {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public Disease description(String description) {
-        this.description = description;
-        return this;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public DiseaseSeverity getSeverity() {
         return severity;
     }
@@ -94,6 +83,19 @@ public class Disease implements Serializable {
 
     public void setSeverity(DiseaseSeverity severity) {
         this.severity = severity;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Disease description(String description) {
+        this.description = description;
+        return this;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getSymptoms() {
@@ -148,8 +150,8 @@ public class Disease implements Serializable {
         return "Disease{" +
             "id=" + getId() +
             ", name='" + getName() + "'" +
-            ", description='" + getDescription() + "'" +
             ", severity='" + getSeverity() + "'" +
+            ", description='" + getDescription() + "'" +
             ", symptoms='" + getSymptoms() + "'" +
             ", tips='" + getTips() + "'" +
             "}";

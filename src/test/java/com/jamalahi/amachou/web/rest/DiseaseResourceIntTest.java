@@ -52,11 +52,11 @@ public class DiseaseResourceIntTest {
     private static final String DEFAULT_NAME = "AAAAAAAAAA";
     private static final String UPDATED_NAME = "BBBBBBBBBB";
 
-    private static final String DEFAULT_DESCRIPTION = "AAAAAAAAAA";
-    private static final String UPDATED_DESCRIPTION = "BBBBBBBBBB";
-
     private static final DiseaseSeverity DEFAULT_SEVERITY = DiseaseSeverity.LOW;
     private static final DiseaseSeverity UPDATED_SEVERITY = DiseaseSeverity.MEDIUM;
+
+    private static final String DEFAULT_DESCRIPTION = "AAAAAAAAAA";
+    private static final String UPDATED_DESCRIPTION = "BBBBBBBBBB";
 
     private static final String DEFAULT_SYMPTOMS = "AAAAAAAAAA";
     private static final String UPDATED_SYMPTOMS = "BBBBBBBBBB";
@@ -117,8 +117,8 @@ public class DiseaseResourceIntTest {
     public static Disease createEntity(EntityManager em) {
         Disease disease = new Disease()
             .name(DEFAULT_NAME)
-            .description(DEFAULT_DESCRIPTION)
             .severity(DEFAULT_SEVERITY)
+            .description(DEFAULT_DESCRIPTION)
             .symptoms(DEFAULT_SYMPTOMS)
             .tips(DEFAULT_TIPS);
         return disease;
@@ -146,8 +146,8 @@ public class DiseaseResourceIntTest {
         assertThat(diseaseList).hasSize(databaseSizeBeforeCreate + 1);
         Disease testDisease = diseaseList.get(diseaseList.size() - 1);
         assertThat(testDisease.getName()).isEqualTo(DEFAULT_NAME);
-        assertThat(testDisease.getDescription()).isEqualTo(DEFAULT_DESCRIPTION);
         assertThat(testDisease.getSeverity()).isEqualTo(DEFAULT_SEVERITY);
+        assertThat(testDisease.getDescription()).isEqualTo(DEFAULT_DESCRIPTION);
         assertThat(testDisease.getSymptoms()).isEqualTo(DEFAULT_SYMPTOMS);
         assertThat(testDisease.getTips()).isEqualTo(DEFAULT_TIPS);
 
@@ -237,25 +237,6 @@ public class DiseaseResourceIntTest {
 
     @Test
     @Transactional
-    public void checkTipsIsRequired() throws Exception {
-        int databaseSizeBeforeTest = diseaseRepository.findAll().size();
-        // set the field null
-        disease.setTips(null);
-
-        // Create the Disease, which fails.
-        DiseaseDTO diseaseDTO = diseaseMapper.toDto(disease);
-
-        restDiseaseMockMvc.perform(post("/api/diseases")
-            .contentType(TestUtil.APPLICATION_JSON_UTF8)
-            .content(TestUtil.convertObjectToJsonBytes(diseaseDTO)))
-            .andExpect(status().isBadRequest());
-
-        List<Disease> diseaseList = diseaseRepository.findAll();
-        assertThat(diseaseList).hasSize(databaseSizeBeforeTest);
-    }
-
-    @Test
-    @Transactional
     public void getAllDiseases() throws Exception {
         // Initialize the database
         diseaseRepository.saveAndFlush(disease);
@@ -266,8 +247,8 @@ public class DiseaseResourceIntTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(disease.getId().intValue())))
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME.toString())))
-            .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION.toString())))
             .andExpect(jsonPath("$.[*].severity").value(hasItem(DEFAULT_SEVERITY.toString())))
+            .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION.toString())))
             .andExpect(jsonPath("$.[*].symptoms").value(hasItem(DEFAULT_SYMPTOMS.toString())))
             .andExpect(jsonPath("$.[*].tips").value(hasItem(DEFAULT_TIPS.toString())));
     }
@@ -284,8 +265,8 @@ public class DiseaseResourceIntTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
             .andExpect(jsonPath("$.id").value(disease.getId().intValue()))
             .andExpect(jsonPath("$.name").value(DEFAULT_NAME.toString()))
-            .andExpect(jsonPath("$.description").value(DEFAULT_DESCRIPTION.toString()))
             .andExpect(jsonPath("$.severity").value(DEFAULT_SEVERITY.toString()))
+            .andExpect(jsonPath("$.description").value(DEFAULT_DESCRIPTION.toString()))
             .andExpect(jsonPath("$.symptoms").value(DEFAULT_SYMPTOMS.toString()))
             .andExpect(jsonPath("$.tips").value(DEFAULT_TIPS.toString()));
     }
@@ -312,8 +293,8 @@ public class DiseaseResourceIntTest {
         em.detach(updatedDisease);
         updatedDisease
             .name(UPDATED_NAME)
-            .description(UPDATED_DESCRIPTION)
             .severity(UPDATED_SEVERITY)
+            .description(UPDATED_DESCRIPTION)
             .symptoms(UPDATED_SYMPTOMS)
             .tips(UPDATED_TIPS);
         DiseaseDTO diseaseDTO = diseaseMapper.toDto(updatedDisease);
@@ -328,8 +309,8 @@ public class DiseaseResourceIntTest {
         assertThat(diseaseList).hasSize(databaseSizeBeforeUpdate);
         Disease testDisease = diseaseList.get(diseaseList.size() - 1);
         assertThat(testDisease.getName()).isEqualTo(UPDATED_NAME);
-        assertThat(testDisease.getDescription()).isEqualTo(UPDATED_DESCRIPTION);
         assertThat(testDisease.getSeverity()).isEqualTo(UPDATED_SEVERITY);
+        assertThat(testDisease.getDescription()).isEqualTo(UPDATED_DESCRIPTION);
         assertThat(testDisease.getSymptoms()).isEqualTo(UPDATED_SYMPTOMS);
         assertThat(testDisease.getTips()).isEqualTo(UPDATED_TIPS);
 
@@ -393,8 +374,8 @@ public class DiseaseResourceIntTest {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(disease.getId().intValue())))
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME)))
-            .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION)))
             .andExpect(jsonPath("$.[*].severity").value(hasItem(DEFAULT_SEVERITY.toString())))
+            .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION)))
             .andExpect(jsonPath("$.[*].symptoms").value(hasItem(DEFAULT_SYMPTOMS)))
             .andExpect(jsonPath("$.[*].tips").value(hasItem(DEFAULT_TIPS)));
     }

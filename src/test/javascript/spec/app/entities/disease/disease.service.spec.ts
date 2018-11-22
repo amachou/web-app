@@ -21,7 +21,7 @@ describe('Service Tests', () => {
             service = injector.get(DiseaseService);
             httpMock = injector.get(HttpTestingController);
 
-            elemDefault = new Disease(0, 'AAAAAAA', 'AAAAAAA', DiseaseSeverity.LOW, 'AAAAAAA', 'AAAAAAA');
+            elemDefault = new Disease(0, 'AAAAAAA', DiseaseSeverity.LOW, 'AAAAAAA', 'AAAAAAA', 'AAAAAAA');
         });
 
         describe('Service methods', async () => {
@@ -56,8 +56,8 @@ describe('Service Tests', () => {
                 const returnedFromService = Object.assign(
                     {
                         name: 'BBBBBB',
-                        description: 'BBBBBB',
                         severity: 'BBBBBB',
+                        description: 'BBBBBB',
                         symptoms: 'BBBBBB',
                         tips: 'BBBBBB'
                     },
@@ -77,8 +77,8 @@ describe('Service Tests', () => {
                 const returnedFromService = Object.assign(
                     {
                         name: 'BBBBBB',
-                        description: 'BBBBBB',
                         severity: 'BBBBBB',
+                        description: 'BBBBBB',
                         symptoms: 'BBBBBB',
                         tips: 'BBBBBB'
                     },

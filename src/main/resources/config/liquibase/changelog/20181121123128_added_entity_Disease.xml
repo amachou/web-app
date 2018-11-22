@@ -25,20 +25,20 @@
                 <constraints nullable="false" unique="true" uniqueConstraintName="ux_disease_name" />
             </column>
 
-            <column name="description" type="varchar(255)">
-                <constraints nullable="true" />
-            </column>
-
             <column name="severity" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
 
-            <column name="symptoms" type="varchar(255)">
+            <column name="description" type="varchar(1000000000)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="symptoms" type="varchar(1000000000)">
                 <constraints nullable="false" />
             </column>
 
-            <column name="tips" type="varchar(255)">
-                <constraints nullable="false" />
+            <column name="tips" type="varchar(1000000000)">
+                <constraints nullable="true" />
             </column>
 
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->

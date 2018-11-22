@@ -17,8 +17,8 @@
                 "title": "Disease"
             },
             "name": "Name",
-            "description": "Description",
             "severity": "Severity",
+            "description": "Description",
             "symptoms": "Symptoms",
             "tips": "Tips"
         }

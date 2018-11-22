@@ -15,15 +15,17 @@ public class DiseaseDTO implements Serializable {
     @NotNull
     private String name;
 
-    private String description;
-
     @NotNull
     private DiseaseSeverity severity;
 
-    @NotNull
-    private String symptoms;
+    @Size(max = 1000000000)
+    private String description;
 
     @NotNull
+    @Size(max = 1000000000)
+    private String symptoms;
+
+    @Size(max = 1000000000)
     private String tips;
 
     public Long getId() {
@@ -42,20 +44,20 @@ public class DiseaseDTO implements Serializable {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public DiseaseSeverity getSeverity() {
         return severity;
     }
 
     public void setSeverity(DiseaseSeverity severity) {
         this.severity = severity;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getSymptoms() {
@@ -100,8 +102,8 @@ public class DiseaseDTO implements Serializable {
         return "DiseaseDTO{" +
             "id=" + getId() +
             ", name='" + getName() + "'" +
-            ", description='" + getDescription() + "'" +
             ", severity='" + getSeverity() + "'" +
+            ", description='" + getDescription() + "'" +
             ", symptoms='" + getSymptoms() + "'" +
             ", tips='" + getTips() + "'" +
             "}";

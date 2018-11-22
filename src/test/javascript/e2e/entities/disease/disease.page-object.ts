@@ -27,8 +27,8 @@ export class DiseaseUpdatePage {
     saveButton = element(by.id('save-entity'));
     cancelButton = element(by.id('cancel-save'));
     nameInput = element(by.id('field_name'));
-    descriptionInput = element(by.id('field_description'));
     severitySelect = element(by.id('field_severity'));
+    descriptionInput = element(by.id('field_description'));
     symptomsInput = element(by.id('field_symptoms'));
     tipsInput = element(by.id('field_tips'));
 
@@ -44,14 +44,6 @@ export class DiseaseUpdatePage {
         return this.nameInput.getAttribute('value');
     }
 
-    async setDescriptionInput(description) {
-        await this.descriptionInput.sendKeys(description);
-    }
-
-    async getDescriptionInput() {
-        return this.descriptionInput.getAttribute('value');
-    }
-
     async setSeveritySelect(severity) {
         await this.severitySelect.sendKeys(severity);
     }
@@ -65,6 +57,14 @@ export class DiseaseUpdatePage {
             .all(by.tagName('option'))
             .last()
             .click();
+    }
+
+    async setDescriptionInput(description) {
+        await this.descriptionInput.sendKeys(description);
+    }
+
+    async getDescriptionInput() {
+        return this.descriptionInput.getAttribute('value');
     }
 
     async setSymptomsInput(symptoms) {

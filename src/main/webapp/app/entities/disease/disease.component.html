@@ -31,8 +31,8 @@
             <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="reset.bind(this)">
             <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="name"><span jhiTranslate="amachouApp.disease.name">Name</span> <fa-icon [icon]="'sort'"></fa-icon></th>
-            <th jhiSortBy="description"><span jhiTranslate="amachouApp.disease.description">Description</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="severity"><span jhiTranslate="amachouApp.disease.severity">Severity</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th jhiSortBy="description"><span jhiTranslate="amachouApp.disease.description">Description</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="symptoms"><span jhiTranslate="amachouApp.disease.symptoms">Symptoms</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th jhiSortBy="tips"><span jhiTranslate="amachouApp.disease.tips">Tips</span> <fa-icon [icon]="'sort'"></fa-icon></th>
             <th></th>
@@ -42,8 +42,8 @@
             <tr *ngFor="let disease of diseases ;trackBy: trackId">
                 <td><a [routerLink]="['/disease', disease.id, 'view' ]">{{disease.id}}</a></td>
                 <td>{{disease.name}}</td>
-                <td>{{disease.description}}</td>
                 <td jhiTranslate="{{'amachouApp.DiseaseSeverity.' + disease.severity}}">{{disease.severity}}</td>
+                <td>{{disease.description}}</td>
                 <td>{{disease.symptoms}}</td>
                 <td>{{disease.tips}}</td>
                 <td class="text-right">

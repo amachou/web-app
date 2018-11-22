@@ -73,8 +73,8 @@ class DiseaseGatlingTest extends Simulation {
             .body(StringBody("""{
                 "id":null
                 , "name":"SAMPLE_TEXT"
-                , "description":"SAMPLE_TEXT"
                 , "severity":"LOW"
+                , "description":"SAMPLE_TEXT"
                 , "symptoms":"SAMPLE_TEXT"
                 , "tips":"SAMPLE_TEXT"
                 }""")).asJSON

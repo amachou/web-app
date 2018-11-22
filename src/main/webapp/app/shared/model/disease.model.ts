@@ -9,8 +9,8 @@ export const enum DiseaseSeverity {
 export interface IDisease {
     id?: number;
     name?: string;
-    description?: string;
     severity?: DiseaseSeverity;
+    description?: string;
     symptoms?: string;
     tips?: string;
 }
@@ -19,8 +19,8 @@ export class Disease implements IDisease {
     constructor(
         public id?: number,
         public name?: string,
-        public description?: string,
         public severity?: DiseaseSeverity,
+        public description?: string,
         public symptoms?: string,
         public tips?: string
     ) {}

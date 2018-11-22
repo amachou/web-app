@@ -40,8 +40,8 @@ describe('Disease e2e test', () => {
         await diseaseComponentsPage.clickOnCreateButton();
         await promise.all([
             diseaseUpdatePage.setNameInput('name'),
-            diseaseUpdatePage.setDescriptionInput('description'),
             diseaseUpdatePage.severitySelectLastOption(),
+            diseaseUpdatePage.setDescriptionInput('description'),
             diseaseUpdatePage.setSymptomsInput('symptoms'),
             diseaseUpdatePage.setTipsInput('tips')
         ]);

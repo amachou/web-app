@@ -12,11 +12,6 @@
             ]
         },
         {
-            "fieldName": "description",
-            "fieldType": "String",
-            "fieldValidateRules": []
-        },
-        {
             "fieldName": "severity",
             "fieldType": "DiseaseSeverity",
             "fieldValues": "LOW,MEDIUM,HIGH,SEVERE,DEADLY",
@@ -25,18 +20,29 @@
             ]
         },
         {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1000000000"
+        },
+        {
             "fieldName": "symptoms",
             "fieldType": "String",
             "fieldValidateRules": [
-                "required"
-            ]
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1000000000"
         },
         {
             "fieldName": "tips",
             "fieldType": "String",
             "fieldValidateRules": [
-                "required"
-            ]
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1000000000"
         }
     ],
     "changelogDate": "20181121123128",

@@ -29,15 +29,15 @@
                 <constraints nullable="false" />
             </column>
 
-            <column name="description" type="varchar(1000000000)">
+            <column name="description" type="varchar(10000000)">
                 <constraints nullable="true" />
             </column>
 
-            <column name="symptoms" type="varchar(1000000000)">
+            <column name="symptoms" type="varchar(10000000)">
                 <constraints nullable="false" />
             </column>
 
-            <column name="tips" type="varchar(1000000000)">
+            <column name="tips" type="varchar(10000000)">
                 <constraints nullable="true" />
             </column>
 

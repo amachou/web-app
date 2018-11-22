@@ -18,14 +18,14 @@ public class DiseaseDTO implements Serializable {
     @NotNull
     private DiseaseSeverity severity;
 
-    @Size(max = 1000000000)
+    @Size(max = 10000000)
     private String description;
 
     @NotNull
-    @Size(max = 1000000000)
+    @Size(max = 10000000)
     private String symptoms;
 
-    @Size(max = 1000000000)
+    @Size(max = 10000000)
     private String tips;
 
     public Long getId() {

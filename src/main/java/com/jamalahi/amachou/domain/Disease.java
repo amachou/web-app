@@ -37,17 +37,17 @@ public class Disease implements Serializable {
     @Column(name = "severity", nullable = false)
     private DiseaseSeverity severity;
 
-    @Size(max = 1000000000)
-    @Column(name = "description", length = 1000000000)
+    @Size(max = 10000000)
+    @Column(name = "description", length = 10000000)
     private String description;
 
     @NotNull
-    @Size(max = 1000000000)
-    @Column(name = "symptoms", length = 1000000000, nullable = false)
+    @Size(max = 10000000)
+    @Column(name = "symptoms", length = 10000000, nullable = false)
     private String symptoms;
 
-    @Size(max = 1000000000)
-    @Column(name = "tips", length = 1000000000)
+    @Size(max = 10000000)
+    @Column(name = "tips", length = 10000000)
     private String tips;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove

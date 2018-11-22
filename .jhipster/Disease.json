@@ -25,7 +25,7 @@
             "fieldValidateRules": [
                 "maxlength"
             ],
-            "fieldValidateRulesMaxlength": "1000000000"
+            "fieldValidateRulesMaxlength": "10000000"
         },
         {
             "fieldName": "symptoms",
@@ -34,7 +34,7 @@
                 "required",
                 "maxlength"
             ],
-            "fieldValidateRulesMaxlength": "1000000000"
+            "fieldValidateRulesMaxlength": "10000000"
         },
         {
             "fieldName": "tips",
@@ -42,7 +42,7 @@
             "fieldValidateRules": [
                 "maxlength"
             ],
-            "fieldValidateRulesMaxlength": "1000000000"
+            "fieldValidateRulesMaxlength": "10000000"
         }
     ],
     "changelogDate": "20181121123128",

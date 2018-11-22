@@ -39,37 +39,37 @@
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="amachouApp.disease.description" for="field_description">Description</label>
                     <input type="text" class="form-control" name="description" id="field_description"
-                        [(ngModel)]="disease.description" maxlength="1000000000"/>
+                        [(ngModel)]="disease.description" maxlength="10000000"/>
                     <div [hidden]="!(editForm.controls.description?.dirty && editForm.controls.description?.invalid)">
                         <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.description?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" translateValues="{ max: 1000000000 }">
-                        This field cannot be longer than 1000000000 characters.
+                        [hidden]="!editForm.controls.description?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" translateValues="{ max: 10000000 }">
+                        This field cannot be longer than 10000000 characters.
                         </small>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="amachouApp.disease.symptoms" for="field_symptoms">Symptoms</label>
                     <input type="text" class="form-control" name="symptoms" id="field_symptoms"
-                        [(ngModel)]="disease.symptoms" required maxlength="1000000000"/>
+                        [(ngModel)]="disease.symptoms" required maxlength="10000000"/>
                     <div [hidden]="!(editForm.controls.symptoms?.dirty && editForm.controls.symptoms?.invalid)">
                         <small class="form-text text-danger"
                         [hidden]="!editForm.controls.symptoms?.errors?.required" jhiTranslate="entity.validation.required">
                         This field is required.
                         </small>
                         <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.symptoms?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" translateValues="{ max: 1000000000 }">
-                        This field cannot be longer than 1000000000 characters.
+                        [hidden]="!editForm.controls.symptoms?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" translateValues="{ max: 10000000 }">
+                        This field cannot be longer than 10000000 characters.
                         </small>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="form-control-label" jhiTranslate="amachouApp.disease.tips" for="field_tips">Tips</label>
                     <input type="text" class="form-control" name="tips" id="field_tips"
-                        [(ngModel)]="disease.tips" maxlength="1000000000"/>
+                        [(ngModel)]="disease.tips" maxlength="10000000"/>
                     <div [hidden]="!(editForm.controls.tips?.dirty && editForm.controls.tips?.invalid)">
                         <small class="form-text text-danger"
-                        [hidden]="!editForm.controls.tips?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" translateValues="{ max: 1000000000 }">
-                        This field cannot be longer than 1000000000 characters.
+                        [hidden]="!editForm.controls.tips?.errors?.maxlength" jhiTranslate="entity.validation.maxlength" translateValues="{ max: 10000000 }">
+                        This field cannot be longer than 10000000 characters.
                         </small>
                     </div>
                 </div>
